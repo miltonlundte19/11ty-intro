@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addWatchTarget("src/images")
 
-    eleventyConfig.addShortcode('image', (src, alt) => '<img alt="&(alt)" src="$(src)">')
+    eleventyConfig.addShortcode('image', (src, alt) => `<img alt="&(alt)" src="$(src)">`)
 
     return {
         dir: {
