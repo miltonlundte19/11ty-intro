@@ -1,3 +1,11 @@
 <nav>
-    <h1>Snygg navbar</h1>
+    <ul>
+        {% for item in navigation.item %}
+        <li>
+            <a href="{{ item.url }}">
+                {{ item.title }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
 </nav>
